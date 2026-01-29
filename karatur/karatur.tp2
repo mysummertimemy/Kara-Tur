@@ -22,7 +22,8 @@ ALWAYS
     LAF autotra_workaround END
 
 	ACTION_IF GAME_IS ~bgee eet~ BEGIN
-//  ACTION_DEFINE_ARRAY KaraTur_noconvert BEGIN END
+
+		ACTION_DEFINE_ARRAY KaraTur_noconvert BEGIN install	END
 
 		ACTION_DEFINE_ARRAY KaraTur_reload BEGIN Setup END
 
@@ -33,7 +34,7 @@ ALWAYS
 				tra_path = EVAL ~weidu_external/KaraTur/Languages/autotra~
 				out_path = EVAL ~weidu_external/KaraTur/Languages/autotra/UTF8~
 				iconv_path = ~KaraTur/Languages/autotra/iconv~
-				// noconvert_array = KaraTur_noconvert
+				noconvert_array = KaraTur_noconvert
 				reload_array = KaraTur_reload
 			END
 
@@ -55,6 +56,10 @@ LANGUAGE ~Spanish~
          ~spanish~
          ~KaraTur/Languages/spanish/setup.tra~
 
+LANGUAGE ~Simplified Chinese~
+         ~schinese~
+         ~KaraTur/Languages/SChinese/setup.tra~
+         ~KaraTur/Languages/SChinese/install.tra~
 
 BEGIN @300 /* T'Was a Slow Boat from Kara-Tur */
 DESIGNATED 0
