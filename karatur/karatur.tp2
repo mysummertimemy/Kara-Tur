@@ -19,6 +19,8 @@ ALWAYS
       COPY ~KaraTur/Languages/%LANGUAGE%~					~weidu_external/KaraTur/Languages/autotra/%LANGUAGE%~
     END
 
+    LAF autotra_workaround END
+
 // Special BGT (created by JohnBob for BloodAndFaith, part 1 of 2)
   ACTION_IF (GAME_IS ~bgt~ AND ~%LANGUAGE%~ STR_EQ ~polish~)  THEN BEGIN 
 
@@ -32,8 +34,6 @@ ALWAYS
 	OUTER_SET SpecialBGT = 0
 
   END
-
-    LAF autotra_workaround END
 
 	ACTION_IF GAME_IS ~bgee eet~ BEGIN
 
